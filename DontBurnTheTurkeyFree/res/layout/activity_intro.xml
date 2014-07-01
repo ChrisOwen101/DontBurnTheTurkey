@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#80000000" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Welcome"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#E3E3E3"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="#80000000"
+            android:padding="10dp"
+            android:text="Step 1: Select - Choose your meat, vegetables and extras that you want with your meal."
+            android:textColor="#E3E3E3"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="#80000000"
+            android:padding="10dp"
+            android:text="Step 2: Review - Review your choices and make sure you have all of the ingreients for your meal. Invite friends and family to your meal via facebook."
+            android:textColor="#E3E3E3"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_below="@+id/textView3"
+            android:background="#80000000"
+            android:padding="10dp"
+            android:text="Step 3: Cook - Start the timers and complete each of the tasks as it is given to you. And remember. Don&apos;t Burn The Turkey."
+            android:textColor="#E3E3E3"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Choose!" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
