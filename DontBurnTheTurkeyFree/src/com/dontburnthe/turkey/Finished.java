@@ -10,6 +10,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
+//Activity appears when all timers have completed.
 public class Finished extends Activity {
 	
 	Typeface type;

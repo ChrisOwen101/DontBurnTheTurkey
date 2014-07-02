@@ -24,6 +24,7 @@ import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.dontburnthe.turkey.AnimationFactory.FlipDirection;
 
+//Extras panel
 public class Extras extends SherlockActivity {
 
 	Context context = this;
@@ -130,9 +131,11 @@ public class Extras extends SherlockActivity {
 
 						String ingredientList = "";
 						String stepList = "";
+
 						for(int i = 0; i<recipes.get(position).usedIngre.size(); i++){
 							ingredientList = ingredientList + recipes.get(position).usedIngre.get(i).name + " - " + recipes.get(position).usedIngre.get(i).quantity+ "\n";
 						}
+
 						for(int i = 0; i<recipes.get(position).steps.size(); i++){
 							stepList = stepList + recipes.get(position).steps.get(i).title + "\n" + recipes.get(position).steps.get(i).desc + " - " + recipes.get(position).steps.get(i).time + " minutes\n";
 						}
@@ -155,6 +158,8 @@ public class Extras extends SherlockActivity {
 						});
 
 						ImageView im = (ImageView) dialog.findViewById(R.id.image);
+
+						//Setup recipe images
 
 						if(recipes.get(position).mainIngre.name.equals("Stale bread")){
 							im.setImageResource(R.drawable.breadsauce);
@@ -195,6 +200,7 @@ public class Extras extends SherlockActivity {
 							}
 						}
 						
+						//Find position of the recipe internally
 						int positionRecipe = 0;
 						for(int i = 0; i<data.recipes.size(); i++){
 							if(recipes.get(position).equals(data.recipes.get(i))){
@@ -202,9 +208,11 @@ public class Extras extends SherlockActivity {
 							}
 						}
 
+						//Get list of selected items
 						SharedPreferences settings = context.getSharedPreferences("veg", 0);
 						String list = settings.getString("list", "");
 
+						//Store the selected item to the list
 						list = list + positionRecipe + "," + "0" + " ";
 						System.out.println(list);
 
@@ -221,12 +229,11 @@ public class Extras extends SherlockActivity {
 
 
 
-
 		for(int y = 0; y<panels.length; y++){
 
 			text[y].setTypeface(type,1);
 
-
+			//Animate the tile flip when clicked.
 			panels[y].setOnClickListener(new OnClickListener() {
 				public void onClick(View v) {				
 					int panelNumber = 0;

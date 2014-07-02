@@ -74,7 +74,7 @@ public class Timer extends SherlockActivity {
 			}
 		}
 
-		//Setup Listview
+		//Setup Listview for each of the different elements to be cooked
 		ArrayList<ArrayList<Step>> steps = new ArrayList<ArrayList<Step>>();
 		ArrayList<Step> list;
 

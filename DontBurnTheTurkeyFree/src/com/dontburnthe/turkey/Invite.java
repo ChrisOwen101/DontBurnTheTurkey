@@ -29,6 +29,7 @@ import com.facebook.android.Facebook;
 import com.facebook.android.FacebookError;
 import com.facebook.android.Util;
 
+//Invite friends to the app -- currently in contruction
 public class Invite extends SherlockFragment{
 
 	private Facebook facebook;

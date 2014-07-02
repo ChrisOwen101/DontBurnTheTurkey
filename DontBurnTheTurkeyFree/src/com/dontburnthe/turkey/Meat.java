@@ -136,6 +136,7 @@ public class Meat extends SherlockFragmentActivity {
 		width = display.getWidth();  // deprecated
 		height = display.getHeight(); 
 
+		//Very hacky way of making the two viewpagers slide at the same time. A bit buggy when sliding backwards.
 		mViewPager2.setOnPageChangeListener(new OnPageChangeListener() {
 
 			public void onPageSelected(int arg0) {
@@ -216,6 +217,7 @@ public class Meat extends SherlockFragmentActivity {
 		}
 	}
 
+	//Setup tabs for each of the meats
 	public static class TabFragment extends Fragment {
 
 		public static final String ARG_OBJECT = "object";
@@ -387,6 +389,7 @@ public class Meat extends SherlockFragmentActivity {
 			final TextView time = (TextView) rootView.findViewById(R.id.textView3);
 			time.setTypeface(type);
 
+			//Kind of hacky way to calculate the correct weight and time for the meat
 			edit.addTextChangedListener(new TextWatcher(){
 				public void afterTextChanged(Editable s) {}
 				public void beforeTextChanged(CharSequence s, int start, int count, int after){}

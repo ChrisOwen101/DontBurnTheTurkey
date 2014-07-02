@@ -2,6 +2,7 @@ package com.dontburnthe.turkey;
 
 import java.util.LinkedList;
 
+//Manually adding recipe on start up to be recplaces by an online service later
 public class Data {
 
 	LinkedList<Recipe> recipes = new LinkedList<Recipe>();
